@@ -4692,7 +4692,7 @@ input, select, textarea {
 		padding-bottom: 10px;
 	}
 	.carousel-item{
-		background-color: pink;
+		/* background-color: pink; */
 		/* width: 200px; */
 		width: 389px;
 		/* height: 250px; */
@@ -4707,6 +4707,21 @@ input, select, textarea {
 		transform-origin: center left;
 		position: relative;
 	}
+	.carousel-itemImg{
+		/* background-color: none; */
+		width: 250px;
+		height: 250px;
+		border-radius: 20px;
+		overflow: hidden;
+		/* margin: 10px; */
+		/* margin-right: 10px; */
+		display: inline-block;
+		cursor: pointer;
+		transition: 450ms all;
+		transform-origin: center left;
+		position: relative;
+	}
+
 	.carousel-item:hover ~ .carousel-item{
 		/* transform: translate3d(100px,0,0); */
 		transform: translate3d(200px,0,0);		
@@ -4723,6 +4738,11 @@ input, select, textarea {
 		width: 200px;
 		height: 250px;
 		object-fit: cover;
+	}
+	.carousel-item__img2{
+		width: 250px;
+		height: 200px;
+		object-fit: scale-down;
 	}
 	.carousel-item__details {
 		/* linear-gradient(to top,) es para poder hacer un efecto degradiente */
