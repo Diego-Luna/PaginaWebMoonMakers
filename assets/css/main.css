@@ -2483,10 +2483,6 @@ input, select, textarea {
 			border-color: #18bfef;
 		}
 
-	select {
-		/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23eeeeee' /%3E%3C/svg%3E"); */
-	}
-
 		select option {
 			background-color: #ffffff;
 			color: #212931;
@@ -2579,17 +2575,6 @@ input, select, textarea {
 			max-width: 100%;
 			height: auto;
 		}
-		/* .map.left{ */
-			/* max-width: 80%; */
-			/* float: left; */
-			/* margin: 1rem 2rem 2rem 6rem;
-			top: 0.75rem;
-			height: 400px;
-		}
-		.map.left iframe{
-			width: 100%;
-			height: 100%;
-		} */
 
 			.image.left img, .image.right img {
 				width: 100%;
@@ -2635,10 +2620,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-			/* .map{
-				width: 100%;
-				height: 100%;
-			} */
+		
 
 		@media screen and (max-width: 736px) {
 
@@ -2650,9 +2632,6 @@ input, select, textarea {
 				margin: 2rem 0;
 			}
 
-			/* .map{
-				margin: 2rem 0;
-			} */
 
 		}
 
@@ -3229,22 +3208,12 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			left: 0;
-			/* width: 100%; */
-			/* height: 100%; */
 			background-color: #212931;
-			/* background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/fondoWRO.jpg"); */
-			/* background-image: url(../../images/fondoWRO.jpg); */
-			/* background-size: auto,								auto,														100% auto; */
-			/* background-position: center,								center,														top center; */
-			/* background-repeat: repeat,								no-repeat,													no-repeat; */
-			/* background-attachment: scroll,								scroll,														scroll; */
 			z-index: -1;
 		}
 
 			#wrapper > .bg.fixed {
 				position: fixed;
-				/* width: 100vw; */
-				/* height: 100vh; */
 			}
 
 		#wrapper.fade-in:before {
@@ -3274,9 +3243,7 @@ input, select, textarea {
 
 		@media screen and (orientation: portrait) {
 
-			#wrapper > .bg {
-				/* background-size: auto,								auto,														auto 175%; */
-			}
+			
 
 		}
 
@@ -4058,10 +4025,6 @@ input, select, textarea {
 				border-color: #18bfef;
 			}
 
-		#footer select {
-			/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23e2e2e2' /%3E%3C/svg%3E"); */
-		}
-
 			#footer select option {
 				background-color: #f5f5f5;
 				color: #717981;
@@ -4380,106 +4343,6 @@ input, select, textarea {
 
 		}
 
-	/* #copyright {
-		color: #ffffff;
-		position: relative;
-		color: rgba(255, 255, 255, 0.25);
-		cursor: default;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 0.8rem;
-		font-weight: 900;
-		letter-spacing: 0.075em;
-		line-height: 1.5;
-		text-align: center;
-		text-transform: uppercase;
-		margin: 4rem auto 8rem auto;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
-		z-index: 2;
-	} */
-
-		/* #copyright input, #copyright select, #copyright textarea {
-			color: #ffffff;
-		}
-
-		#copyright a {
-			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
-		}
-
-			#copyright a:hover {
-				border-bottom-color: transparent;
-				color: #18bfef !important;
-			}
-
-		#copyright strong, #copyright b {
-			color: #ffffff;
-		}
-
-		#copyright h1, #copyright h2, #copyright h3, #copyright h4, #copyright h5, #copyright h6 {
-			color: #ffffff;
-		}
-
-		#copyright blockquote {
-			border-left-color: #ffffff;
-		}
-
-		#copyright code {
-			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
-		}
-
-		#copyright hr {
-			border-bottom-color: #ffffff;
-		}
-
-		#copyright a {
-			color: inherit;
-			border-bottom-color: inherit;
-		}
-
-		#copyright ul {
-			list-style: none;
-			margin: 0;
-			padding-left: 0;
-		}
-
-			#copyright ul li {
-				border-left: solid 2px;
-				display: inline-block;
-				line-height: 1;
-				margin-left: 1rem;
-				padding-left: 1rem;
-			}
-
-				#copyright ul li:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				} */
-
-		@media screen and (max-width: 1280px) {
-
-			/* #copyright {
-				margin: 4rem auto;
-			} */
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			/* #copyright ul li {
-				border-left: 0;
-				margin: 1rem 0 0 0;
-				padding-left: 0;
-				display: block;
-			}
-
-				#copyright ul li:first-child {
-					margin-top: 0;
-				} */
-
-		}
 
 /* Nav Panel */
 
@@ -4678,8 +4541,6 @@ input, select, textarea {
 
 	}
 
-/* 450 269 */
-
 	.carousel{
 		width: 100%;
 		overflow: scroll;
@@ -4688,20 +4549,14 @@ input, select, textarea {
 	}
 	.carousel__container{
 		white-space: nowrap;
-		/* margin: 70px 0px; */
 		margin: 70px 70px;
 		padding-bottom: 10px;
 	}
 	.carousel-item{
-		/* background-color: pink; */
-		/* width: 200px; */
 		width: 389px;
-		/* height: 250px; */
 		height: 232px;
 		border-radius: 20px;
 		overflow: hidden;
-		/* margin: 10px; */
-		/* margin-right: 10px; */
 		display: inline-block;
 		cursor: pointer;
 		transition: 450ms all;
@@ -4709,13 +4564,10 @@ input, select, textarea {
 		position: relative;
 	}
 	.carousel-itemImg{
-		/* background-color: none; */
 		width: 250px;
 		height: 250px;
 		border-radius: 20px;
 		overflow: hidden;
-		/* margin: 10px; */
-		/* margin-right: 10px; */
 		display: inline-block;
 		cursor: pointer;
 		transition: 450ms all;
@@ -4724,7 +4576,6 @@ input, select, textarea {
 	}
 
 	.carousel-item:hover ~ .carousel-item{
-		/* transform: translate3d(100px,0,0); */
 		transform: translate3d(200px,0,0);		
 	}
 	.carousel__container:hover .carousel-item{
@@ -4746,8 +4597,6 @@ input, select, textarea {
 		object-fit: scale-down;
 	}
 	.carousel-item__details {
-		/* linear-gradient(to top,) es para poder hacer un efecto degradiente */
-	
 		font-size: 10px;
 		opacity: 0;
 		transition: 450ms opacity;
@@ -4783,18 +4632,14 @@ input, select, textarea {
 		padding: 0;
 	  }
 	  
-	  .flexible-video{ /*Para no perdier la proporcion (H*100/ W)*/
-		/* width: 100%; */
+	  .flexible-video{ 
 		width: 44%;
 		height: 0;
-		/* padding-top: 56.25%;  */
 		padding-top: 26.25%; 
 		background: blue;
 		position: relative;
 	  }
 	  .youtube-video{
-		/* width: 100%; */
-		/* height: auto; */
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -4802,7 +4647,6 @@ input, select, textarea {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		/* z-index: 3; */
 	  }
 
 
