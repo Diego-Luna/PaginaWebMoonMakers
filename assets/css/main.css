@@ -3773,7 +3773,8 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
-					padding: 4rem 2rem 2rem 2rem ;
+					/* padding: 4rem 2rem 2rem 2rem ; */
+					padding: 2rem 0rem 0.01rem 1rem;
 				}
 
 					#main > .post header.major > .date {
@@ -3898,7 +3899,8 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#main > * {
-				padding: 2rem 2rem 0.1rem 2rem ;
+				/* padding: 2rem 2rem 0.1rem 2rem ; */
+				padding: 2rem 2rem 4.1rem 2rem ;
 			}
 
 		}
@@ -4547,6 +4549,7 @@ input, select, textarea {
 		padding: 0 30px;
 		position: relative;
 	}
+	.carousel__container2,
 	.carousel__container{
 		white-space: nowrap;
 		margin: 70px 70px;
@@ -4586,6 +4589,17 @@ input, select, textarea {
 		opacity: 1;
 	}
 	
+	.carousel-item2:hover ~ .carousel-item2{
+		transform: translate3d(25px,0,0);		
+	}
+	.carousel__container2:hover .carousel-item2{
+		opacity: 0.3;
+	}
+	.carousel__container2:hover .carousel-item2:hover{
+		transform: scale(1.1);
+		opacity: 1;
+	}
+
 	.carousel-item__img{
 		width: 200px;
 		height: 250px;
@@ -4623,7 +4637,6 @@ input, select, textarea {
 	.carousel-item__details--title{
 		font-size: 12px;
 	}
-
 
 	.subTema_containerImg {
 		max-width: 450px;
@@ -4691,8 +4704,24 @@ input, select, textarea {
 	background-size: cover;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
 	body{
 		background-position: center center;
 	}
+	.carousel__container2,
+	.carousel__container{
+		margin: 0;
+	}
+	
+	.carousel{
+		width:200%;
+	}
+	.carousel-itemImg{
+		width: 250px;
+		height: 200px;
+	}
+	.carousel-item__IMG{
+		object-fit: scale-down;
+	  }
   }
+
