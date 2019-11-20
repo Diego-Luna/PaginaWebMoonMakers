@@ -2598,9 +2598,9 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.fit:first-child {
+			/* .image.fit:first-child {
 				margin-top: 0;
-			}
+			} */
 
 			.image.fit img {
 				width: 100%;
@@ -2612,9 +2612,9 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main:first-child {
+			/* .image.main:first-child {
 				margin-top: 0;
-			}
+			} */
 
 			.image.main img {
 				width: 100%;
@@ -2639,19 +2639,19 @@ input, select, textarea {
 		overflow: hidden;
 	}
 
-		a.image img {
+		/* a.image img {
 			-moz-transition: -moz-transform 0.2s ease-out;
 			-webkit-transition: -webkit-transform 0.2s ease-out;
 			-ms-transition: -ms-transform 0.2s ease-out;
 			transition: transform 0.2s ease-out;
-		}
+		} */
 
-		a.image:hover img {
+		/* a.image:hover img {
 			-moz-transform: scale(1.05);
 			-webkit-transform: scale(1.05);
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
-		}
+		} */
 
 /* Actions */
 
@@ -3693,11 +3693,20 @@ input, select, textarea {
 
 					#nav ul.links li.active a {
 						color: #1e252d;
+						
 					}
 
 						#nav ul.links li.active a:hover {
 							color: #18bfef !important;
 						}
+
+					#nav ul.links li.ajuste a{
+						display: inline-flex;
+					}
+					
+					#nav ul.links li.ajuste a img{
+						height: 50px;
+					}	
 
 		#nav ul.icons {
 			-moz-flex-grow: 0;
@@ -3722,7 +3731,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: rgba(255, 255, 255, 0.175);
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
@@ -4698,11 +4707,16 @@ input, select, textarea {
   }
 
   body{
-	background-image: url("../../images/fondoWRO.jpg");
-	background-repeat: no-repeat;
+	  
+	background-image: url("https://live.staticflickr.com/65535/48911013206_fb25bcd808_z.jpg");
+	/* background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
-  }
+	background-size: cover; */
+
+	background-attachment: fixed;
+	background-size: 100% 99%;
+	background-repeat: no-repeat;
+}
 
   @media screen and (max-width: 450px) {
 	body{
