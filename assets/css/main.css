@@ -3404,7 +3404,7 @@ input, select, textarea {
 			-webkit-transform: translateY(2rem);
 			-ms-transform: translateY(2rem);
 			transform: translateY(2rem);
-			opacity: 0;
+			/* opacity: 0; */
 		}
 
 			body.is-preload #intro:not(.hidden) + #header + #nav {
@@ -3412,7 +3412,7 @@ input, select, textarea {
 				-webkit-transform: translateY(4rem);
 				-ms-transform: translateY(4rem);
 				transform: translateY(4rem);
-				opacity: 0;
+				/* opacity: 0; */
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3731,7 +3731,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: rgba(255, 255, 255, 0.175);
+		background-color: rgba(255, 255, 255, 1); /*rgba(255, 255, 255, 0.175)*/
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
@@ -4587,26 +4587,30 @@ input, select, textarea {
 		position: relative;
 	}
 
-	.carousel-item:hover ~ .carousel-item{
-		transform: translate3d(200px,0,0);		
-	}
-	.carousel__container:hover .carousel-item{
-		opacity: 0.3;
-	}
-	.carousel__container:hover .carousel-item:hover{
-		transform: scale(1.5);
-		opacity: 1;
-	}
 	
-	.carousel-item2:hover ~ .carousel-item2{
-		transform: translate3d(25px,0,0);		
-	}
-	.carousel__container2:hover .carousel-item2{
-		opacity: 0.3;
-	}
-	.carousel__container2:hover .carousel-item2:hover{
-		transform: scale(1.1);
-		opacity: 1;
+
+	@media screen and (min-width: 480px) { 
+		.carousel-item:hover ~ .carousel-item{
+			transform: translate3d(200px,0,0);		
+		}
+		.carousel__container:hover .carousel-item{
+			opacity: 0.3;
+		}
+		.carousel__container:hover .carousel-item:hover{
+			transform: scale(1.5);
+			opacity: 1;
+		}
+		
+		.carousel-item2:hover ~ .carousel-item2{
+			transform: translate3d(25px,0,0);		
+		}
+		.carousel__container2:hover .carousel-item2{
+			opacity: 0.3;
+		}
+		.carousel__container2:hover .carousel-item2:hover{
+			transform: scale(1.1);
+			opacity: 1;
+		}
 	}
 
 	.carousel-item__img{
