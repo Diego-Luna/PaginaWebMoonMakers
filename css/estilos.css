@@ -304,7 +304,7 @@ figure {
 }
 
 .contact {
-  background-color: #056fff;
+  background-color: #404040;
   color: white;
   height: 150px;
   display: flex;
@@ -330,13 +330,22 @@ figure {
 .social-link.facebook {
   background-image: url('../images/facebook.svg');
 }
-.social-link.github {
+/* .social-link.github {
   background-image: url('../images/github.svg');
-}
+} */
 .social-link.instagram {
   background-image: url('../images/instagram.svg');
 }
 
+.NeT,
+.NeF,
+.NeI{
+ background-image: none;
+}
+
+.NeT{background-image: url('../images/twitterNe.svg');}
+.NeF{background-image: url('../images/facebook2Ne.svg');}
+.NeI{background-image: url('../images/instagramNe.svg');}
 
 .form-email input {
   border-color: gray;
