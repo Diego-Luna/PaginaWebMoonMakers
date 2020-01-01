@@ -38,6 +38,9 @@ valores */
   font-style: normal;
 }
 
+p{
+  margin: 1em;
+}
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -115,6 +118,20 @@ h2 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.hero2{
+  height: 350px;
+  background-image: url('../images/hero.jpg');
+  background-color: #1b2127;
+  /* background-size: 500px 300px; */
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -155px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .hero-image{
   object-fit: cover;
@@ -173,6 +190,7 @@ h2 {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 
@@ -198,11 +216,18 @@ h2 {
   flex-wrap: wrap;
 }
 
-ol,
-ul {
+/* ul, */
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center
+}
+.project-details ul li{
+  padding: 0.5em;
+}
+.project-details ul{
+  list-style: list-item ;
 }
 
 figure {
@@ -477,6 +502,20 @@ figure {
 }
 
 
+.google-maps {
+  position: relative;
+  padding-bottom: 50%; 
+  height: 0;
+  overflow: hidden;
+  }
+  .google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  }
+
 /* .carousel-item__details { */
   /* linear-gradient(to top,) es para poder hacer un efecto degradiente */
   /* background: linear-gradient(to top, rgba(0,0,0, 0.9) 0%, rgba(0,0,0, 0) 100% );
@@ -618,6 +657,7 @@ figure {
 
   .project {
     display: block;
+    text-align: center;
   }
   .project-imageContainer {
     width: auto;
