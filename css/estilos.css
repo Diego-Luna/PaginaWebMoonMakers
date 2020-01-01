@@ -608,11 +608,20 @@ figure {
   position: relative;
 }
 
+@media screen and (max-width: 768px){
+  .hero2{
+    background-position-y: center;
+    height: 275px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   h2 {
     font-size: 1.2em;
     margin: .5em 0;
   }
+  
+
   .burger-button {
     display: block;
   }
@@ -703,6 +712,15 @@ figure {
 
 @media screen and (max-width: 480px) {
 
+  ..carousel-item{
+    transition: none;
+  }
+
+  .hero2{
+    height: 150px;
+    background-position-y: center;
+  }
+  
   .carousel__container2,
 	.carousel__container{
 		margin: 0;
@@ -758,7 +776,7 @@ figure {
     font-size: 1.2em;
     /* background: rgba(0,0,0,.5) */
   }
-  .hero {
-    /* padding: 2em 1em; */
+  .hero2{
+    height: 105px;
   }
 }
