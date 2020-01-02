@@ -106,7 +106,7 @@ h2 {
 
 .hero {
   height: 650px;
-  background-image: url('../images/hero.jpg');
+  background-image: url('../images/Hero.jpg');
   background-color: #1b2127;
   /* background-size: 500px 300px; */
   background-repeat: no-repeat;
@@ -305,7 +305,7 @@ figure {
 }
 .event img {
   width: 480px;
-  height: 200px;
+  height: 271px;
   object-fit: cover;
 }
 .event-detail {
@@ -747,7 +747,10 @@ figure {
 }
 
 @media screen and (max-width: 480px) {
-
+  .carousel__container:hover .carousel-item2:hover{
+    transform: scale(1);
+    opacity: 1;
+  }
   .carousel-itemImg{
 		width: 250px;
 		height: 200px;
