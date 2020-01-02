@@ -434,8 +434,8 @@ figure {
 }
 .carousel-item__img{
   width: 200px;
-  height: 250px;
-  object-fit: cover;
+  height: 100px;
+  object-fit: contain;
 }
 .carousel__container{
   white-space: nowrap;
@@ -457,6 +457,18 @@ figure {
   transform-origin: center left;
   position: relative;
 }
+.carousel-item2{
+  width: 200px;
+  height: 125px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
+}
+
 .carousel-item:hover ~ .carousel-item{
   transform: translate3d(100px,0,0);
 }
@@ -516,9 +528,9 @@ figure {
   height: 100% !important;
   }
 
-/* .carousel-item__details { */
-  /* linear-gradient(to top,) es para poder hacer un efecto degradiente */
-  /* background: linear-gradient(to top, rgba(0,0,0, 0.9) 0%, rgba(0,0,0, 0) 100% );
+.carousel-item__details {
+  /* linear-gradient(to top,) es para poder hacer un efecto degradiente; */
+  /* background: linear-gradient(to top, rgba(0,0,0, 0.9) 0%, rgba(0,0,0, 0) 100% ); */
   font-size: 10px;
   opacity: 0;
   transition: 450ms opacity;
@@ -528,19 +540,43 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
-} */
-/* .carousel-item__details:hover{
+  text-align: center;
+  line-height:225px;
+}
+ .carousel-item__details:hover{
   opacity: 1;
-} */
-/* .carousel-item__details p{
+} 
+.carousel-item__details p{
   margin:2px 0px;
-  color: white; */
-/* } */
+  color: white;
+}
 
-/* .carousel-item__details--title{
+.carousel-item__details--title{
   font-size: 12px;
-} */
+}
 
+.carousel-item2:hover ~ .carousel-item2{
+  transform: translate3d(75px,0,0);		
+}
+.carousel__container:hover .carousel-item2{
+  opacity: 0.3;
+}
+.carousel__container:hover .carousel-item2:hover{
+  transform: scale(1.25);
+  opacity: 1;
+}
+
+.carousel-itemImg{
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
+}
 
 /* desktop first que empieces desde el MQ más grande */
 
@@ -712,7 +748,15 @@ figure {
 
 @media screen and (max-width: 480px) {
 
-  ..carousel-item{
+  .carousel-itemImg{
+		width: 250px;
+		height: 200px;
+	}
+
+  .carousel-item{
+    transition: none;
+  }
+  .carousel-item2{
     transition: none;
   }
 
